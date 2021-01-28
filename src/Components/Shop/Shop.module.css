@@ -1,0 +1,27 @@
+.wrapper_product{
+    display: inline-block;
+    margin: 15px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: lightblue;
+    padding: 5px;
+}
+.products{
+    text-align: center;
+}
+.desc{
+    font-size: 25px;
+    color: purple;
+}
+.img_product{
+    width: 300px;
+    height: 200px;
+    margin: 7px;
+}
+span{
+    font-size: 30px;
+}
+.basket_button{
+    float: right;
+}

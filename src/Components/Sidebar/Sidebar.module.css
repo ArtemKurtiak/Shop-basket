@@ -1,0 +1,30 @@
+.app_sidebar {
+    grid-area: s;
+    background-color: yellowgreen;
+    padding: 30px;
+}
+
+.wrapper {
+
+}
+
+.desc {
+    color: inherit;
+    font-size: 25px;
+}
+
+.basket_item {
+    font-size: 35px;
+}
+
+.item a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s color;
+}
+
+.item a.activeLink {
+    color: darkblue;
+    text-decoration: underline;
+}
