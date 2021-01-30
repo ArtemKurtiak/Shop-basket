@@ -1,4 +1,3 @@
-
 const ADD_PRODUCT = 'ADD_PRODUCT';
 const DELETE_PRODUCT = 'DELETE_PRODUCT';
 
@@ -19,12 +18,7 @@ const productsReducer = (state = initialState, action) => {
             }
         }
         case DELETE_PRODUCT: {
-                return {
-                    ...state,
-                    productsInBasket: [...state.productsInBasket.map(p => {
-
-                    })]
-                }
+            return {...state, productsInBasket: state.productsInBasket.filter(el => el.id !== action.payload.id)}
 
         }
         default:
@@ -47,7 +41,7 @@ export const addProduct = (id, src, name, price) => {
 }
 export const deleteProduct = (id) => {
     return {
-        type: ADD_PRODUCT,
+        type: DELETE_PRODUCT,
         payload: {
             id
         }
