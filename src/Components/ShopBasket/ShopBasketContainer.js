@@ -1,9 +1,10 @@
 import React from 'react'
 import {connect} from "react-redux";
+import ShopBasket from "./ShopBasket";
 
 class ShopBasketContainer extends React.Component {
     render() {
-        return <ShopBasketContainer {...this.props} />
+        return <ShopBasket {...this.props} />
     }
 }
 
