@@ -7,7 +7,10 @@ const ShopBasketItem = (props) => {
         <div className={s.products}>
             <div className={s.desc}>Pen</div>
             <img className={s.img_product} src={props.src} alt=""/></div>
-        <span>Price: {props.price} грн</span>
+        <span>Price:{props.price} грн</span>
+        <br/>
+        {props.hasDiscount ? <span>!Discount! = {props.discount} %</span> : <span>Discount will be soon</span>}
+        <br/>
         <button className={s.basket_button} onClick={() => props.deleteProduct(props.id)}
         >Delete from <ShoppingCartOutlined/></button>
 

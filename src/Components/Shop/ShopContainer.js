@@ -13,8 +13,8 @@ class ShopContainer extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addProduct: (id, src, name, price) => {
-            dispatch(addProduct(id, src, name, price))
+        addProduct: (id, src, name, price, discount, hasDiscount) => {
+            dispatch(addProduct(id, src, name, price, discount, hasDiscount))
         }
     }
 }

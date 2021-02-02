@@ -1,0 +1,10 @@
+.wrapper{
+
+}
+.totalPrice{
+    font-size: 30px;
+    text-align: center;
+}
+.discount{
+    text-decoration: line-through;
+}

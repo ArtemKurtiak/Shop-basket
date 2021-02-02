@@ -13,7 +13,9 @@ const productsReducer = (state = initialState, action) => {
                     id: action.payload.id,
                     src: action.payload.src,
                     name: action.payload.name,
-                    price: action.payload.price
+                    price: action.payload.price,
+                    discount: action.payload.discount,
+                    hasDiscount: action.payload.hasDiscount
                 }]
             }
         }
@@ -27,14 +29,16 @@ const productsReducer = (state = initialState, action) => {
     return state
 }
 
-export const addProduct = (id, src, name, price) => {
+export const addProduct = (id, src, name, price, discount, hasDiscount) => {
     return {
         type: ADD_PRODUCT,
         payload: {
             id,
             src,
             name,
-            price
+            price,
+            discount,
+            hasDiscount
         }
     }
 
