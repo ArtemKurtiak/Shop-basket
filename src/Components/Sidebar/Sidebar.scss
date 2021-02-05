@@ -1,0 +1,28 @@
+@import '../../Different/styles';
+.sidebar {
+  grid-area: s;
+  background-color: $color5;
+  padding: 30px;
+
+  &__route a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s color;
+  }
+
+  &route__title {
+    color: inherit;
+    font-size: 25px;
+  }
+
+  &route__icon {
+    font-size: 35px;
+  }
+
+  &__route a.sidebar__route-active {
+    color: $color6;
+    text-decoration: underline;
+  }
+}
+

@@ -1,4 +1,4 @@
-.app_wrapper {
+.app {
   display: grid;
   grid-template-areas:
     "h h"
@@ -8,8 +8,10 @@
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+
+  &app__content {
+    grid-area: c;
+    padding: 20px;
+  }
 }
-.app_main {
-  grid-area: c;
-  padding: 20px;
-}
+

@@ -1,10 +1,10 @@
-import s from './Header.module.css'
+import './Header.scss'
 import 'antd/dist/antd.css';
 
 const Header = () => {
 
-    return <div className={s.app_header}>
-        <span>Online Shop</span>
+    return <div className={'app_header'}>
+        <span className={'app_header-logo'}>Online Shop</span>
     </div>
 }
 export default Header;

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Header from "./Components/Header/Header";
 import {Route} from "react-router";
@@ -10,13 +10,12 @@ import ShopBasketContainer from "./Components/ShopBasket/ShopBasketContainer";
 
 function App() {
     return (
-        <div className="App">
+        <div className={"App"}>
             <Provider store={store}>
-                <div className={'app_wrapper'}>
+                <div className={'app'}>
                     <Header/>
                     <Sidebar/>
-
-                    <div className='app_main'>
+                    <div className={'app__content'}>
                         <Route path="/shop_basket"
                                render={() => <ShopBasketContainer/>}/>
                         <Route path='/shop' render={() => <ShopContainer/>}/>

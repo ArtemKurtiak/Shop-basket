@@ -1,0 +1,12 @@
+@import '../../Different/styles';
+.app_header {
+    grid-area: h;
+    height: inherit;
+    background-color: $color3;
+    color: $color4;
+    text-align: center;
+    &-logo{
+        font-size: 50px;
+    }
+}
+

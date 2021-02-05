@@ -1,6 +1,5 @@
-import s from './ShopBasket.module.css'
+import './ShopBasket.scss'
 import ShopBasketItem from "./ShopBasketItem";
-import {brown} from "@material-ui/core/colors";
 
 const ShopBasket = (props) => {
     let discounts = [];
@@ -20,14 +19,14 @@ const ShopBasket = (props) => {
                                                                       deleteProduct={props.deleteProduct}
                                                                       discount={p.discount}
                                                                       hasDiscount={p.hasDiscount}/>)
-    return <div className={s.wrapper}>
-        <div className={s.totalPrice}>
+    return <div className={'basket__wrapper'}>
+        <div className={'basket__wrapper__price'}>
 
             {maxDiscount ?
-                <span>Загальна вартість:<span className={s.discount}>{totalPrice > 0 ? totalPrice : 0} грн</span>
+                <span>Загальна вартість:<span className={'basket__wrapper__product-discount'}>{totalPrice > 0 ? totalPrice : 0} грн</span>
                 <br/>
             <span>Discount: {maxDiscount} %</span> <span>Загальна вартість: {currentPrice}</span>
-            </span> : <div>Загальна вартість: {totalPrice} грн</div>}
+            </span> : <div>Загальна вартість: {totalPrice > 0 ? totalPrice : 0} грн</div>}
 
 
         </div>
